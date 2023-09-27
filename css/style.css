@@ -1,0 +1,93 @@
+* {
+  font-family: 'Poppins', sans-serif, monospace;
+}
+
+a{
+  text-decoration: none;
+}
+
+.atag { 
+  color:white;
+  text-decoration: none; 
+}
+
+.atag:hover{
+  color: #f4181c;
+}
+
+
+.carddiv:hover{
+
+  .cardbg {
+      background-color: #f4181c;
+      color: white;
+      transition: all .5s ease 0ms;
+    }
+    
+    .button {
+      background-color: #f4181c;
+      color: white;
+    }
+    
+    .button:hover {
+      background-color: #333333;
+      color: white;
+    }
+}
+
+.carddiv{
+  .button{
+    background-color: #333333;
+    color: white;
+    transition: all .5s ease 0ms;
+  }
+  .cardbg{
+    background-color: #333333;
+    color: white;
+    transition: all .5s ease 0ms;
+  }
+}
+
+.buttonex:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.buttonex {
+  background-color: #f4181c;
+  color: white;
+}
+
+/*image hover*/
+
+.image-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container img {
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.2);
+}
+
+
+/*Accordian*/
+
+
+
+.accordion-button:not(.collapsed) {
+  background-color: #f4181c;
+  color: white;
+}
+
+.accordion-button {
+  background-color: #000000;
+  color: white;
+}
+
+.hreflink:hover{
+  color: #f4181c;
+}
