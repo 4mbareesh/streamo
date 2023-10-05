@@ -61,12 +61,15 @@ a{
 /*image hover*/
 
 .image-container {
+  height: auto;
+  width: auto;
   overflow: hidden;
-  position: relative;
 }
 
 .image-container img {
-  transition: transform 0.3s ease;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease;
 }
 
 .image-container:hover img {
@@ -74,6 +77,17 @@ a{
 }
 
 
+.footerbicon li{
+  overflow: hidden
+}
+
+.footerbicon img {
+  transition: all 0.5s ease;
+}
+
+.footerbicon:hover img{
+  transform: scale(1.2);
+}
 /*Accordian*/
 
 
@@ -95,11 +109,11 @@ a{
 .iconimg {
   background-color: #3b5998;
   border-radius: 100%;
-  margin-left: 5px;
+  margin-left: 9px;
   color: white;
   padding: 9px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   transition: ease-in-out;
   transition-duration: 0.3s;
 }

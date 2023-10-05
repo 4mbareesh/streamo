@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Streamo - Media Streaming App</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="css/stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Home</a>
+              <a class="nav-link text-white" href="/">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Series</a>
@@ -70,9 +70,11 @@
 
     <div class="bg-black text-white p-5">
       <div class="container text-center">
-        <video controls loop="loop" poster="images/bg-3.png" style="height:658px;" class="mb-3">
-          <source src="images/video.mp4" type="video/mp4">
-        </video>
+        <div class="container-fluid">
+          <video controls loop="loop" poster="images/bg-3.png" style="width:1100px; height: auto;" class="mb-3">
+            <source src="images/video.mp4" type="video/mp4">
+          </video>
+        </div>
         <div class="text-start mx-5 px-3">
           <div class="movie-details-info">
             <span class="text-danger fs-5 fw-bold me-3">Director: </span>Brent Robinson <br>
@@ -121,22 +123,22 @@
       <h3 class="border-bottom text-white fw-bolder">Recommended For You</h3>
       <div class="row pt-4">
         <div class="col-6 col-md-3 p-3 p-md-3">
-          <div class="card border-0 image-container">
+          <div class="image-container rounded">
             <a href="info.html"><img src="images/div7img1.png" alt="" class="img-fluid rounded"></a>
           </div>
         </div>
         <div class="col-6 col-md-3 p-3 p-md-3">
-          <div class="card border-0 image-container">
+          <div class="image-container rounded">
             <a href="info.html"><img src="images/div7img2.png" alt="" class="img-fluid rounded"></a>
           </div>
         </div>
         <div class="col-6 col-md-3 p-3 p-md-3">
-          <div class="card border-0 image-container">
+          <div class="image-container rounded">
             <a href="info.html"><img src="images/div7img3.png" alt="" class="img-fluid rounded"></a>
           </div>
         </div>
         <div class="col-6 col-md-3 p-3 p-md-3">
-          <div class="card border-0 image-container">
+          <div class="image-container rounded">
             <a href="info.html"><img src="images/div7img4.png" alt="" class="img-fluid rounded"></a>
           </div>
         </div>
