@@ -206,12 +206,12 @@
 
   <div class="container-fluid text-white p-5" style="background-color: #12222d;">
     <h1 class="fw-bold text-center p-5 display-5">Frequently Asked Questions</h1>
-    <div class="accordion container w-75" data-bs-theme="dark">
+    <div class="accordion container w-75" data-bs-theme="dark" id="acc">
       <div class="accordion-item border-0">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colp1" style="box-shadow: none;">What is Streamo</button>
         </h2>
-        <div id="colp1" class="accordion-collapse collapse text-white" style="background-color: #000000;">
+        <div id="colp1" class="accordion-collapse collapse text-white" style="background-color: #000000;" data-bs-parent="#acc">
           <div class="accordion-body">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
           </div>
@@ -223,7 +223,7 @@
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colp2"
             style="box-shadow: none;">How expensive is Streamo?</button>
         </h2>
-        <div id="colp2" class="accordion-collapse collapse text-white" style="background-color: #000000;">
+        <div id="colp2" class="accordion-collapse collapse text-white" style="background-color: #000000;" data-bs-parent="#acc">
           <div class="accordion-body">
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors.</p>
           </div>
@@ -235,7 +235,7 @@
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colp3"
             style="box-shadow: none;">Can I watch with Streamo everywhere?</button>
         </h2>
-        <div id="colp3" class="accordion-collapse collapse text-white" style="background-color: #000000;">
+        <div id="colp3" class="accordion-collapse collapse text-white" style="background-color: #000000;" data-bs-parent="#acc">
           <div class="accordion-body">
             <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites.</p>
           </div>
@@ -247,7 +247,7 @@
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colp4"
             style="box-shadow: none;">How easy is cancelling the subscription?</button>
         </h2>
-        <div id="colp4" class="accordion-collapse collapse text-white" style="background-color: #000000;">
+        <div id="colp4" class="accordion-collapse collapse text-white" style="background-color: #000000;" data-bs-parent="#acc">
           <div class="accordion-body">
             <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites.</p>
           </div>
@@ -259,7 +259,7 @@
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colp5"
             style="box-shadow: none;">What else can I watch with Streamo?</button>
         </h2>
-        <div id="colp5" class="accordion-collapse collapse text-white" style="background-color: #000000;">
+        <div id="colp5" class="accordion-collapse collapse text-white" style="background-color: #000000;" data-bs-parent="#acc">
           <div class="accordion-body">
             <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites.</p>
           </div>
@@ -271,7 +271,7 @@
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colp6"
             style="box-shadow: none;">How good is Streamo for kids?</button>
         </h2>
-        <div id="colp6" class="accordion-collapse collapse text-white" style="background-color: #000000;">
+        <div id="colp6" class="accordion-collapse collapse text-white" style="background-color: #000000;" data-bs-parent="#acc">
           <div class="accordion-body">
             <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites.</p>
           </div>
@@ -284,20 +284,24 @@
 
 
   <footer class="footer-area bg-black">
-    <div class="container-fluid p-3">
+    <div class="container-fluid p-3 pb-0">
       <div class="row">
         <div class="col-12 col-md-3 text-white">
           <a href="#"><img src="images/logo.png" alt="" class="img-fluid"></a>
           <p>Eiusmod tempor incididunt ut la abore et minim ven exerc itation ulla mco lboris naliquip comm.</p>
-          <div class="row py-3 text-center">
+          <!-- <div class="row py-3 text-center">
             <div class="col"><a href=""><i class="fa-brands fa-facebook text-white fa-xl"></i></a></div>
             <div class="col"><a href=""><i class="fa-brands fa-twitter text-white fa-xl"></i></a></div>
             <div class="col"><a href=""><i class="fa-brands fa-linkedin text-white fa-xl"></i></a></div>
             <div class="col"><a href=""><i class="fa-brands fa-instagram text-white fa-xl"></i></a></div>
-          </div>
+          </div> -->
+          <a class="iconimg" href="#!" role="button"><i class="fab fa-facebook"></i></a>
+          <a class="ticon" role="button"><i class="fab fa-twitter"></i></a>
+          <a class="licon" role="button"><i class="fab fa-linkedin-in"></i></a>
+          <a class="instaicon" role="button"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="col-12 col-md-9">
-          <ul class="list-unstyled d-inline fs-5 fw-medium">
+          <ul class="list-unstyled d-inline fs-5 fw-medium atag">
             <li class="d-inline ms-3"><a href="#" class="atag">Home</a></li>
             <li class="d-inline ms-3"><a href="" class="atag">About US</a></li>
             <li class="d-inline ms-3"><a href="" class="atag">Series</a></li>
@@ -337,18 +341,19 @@
           </ul>
         </div>
       </div>
-      <div class="row">
-        <div class="col-8 text-white">
+    </div>
+    <div class="container-fluid justify-content-between">
+      <div class="row pt-3">
+        <div class="col-8 text-white d-flex justify-content-between pt-2">
           <p>Copyright ©2022 All rights reserved | Made with ❤️ by HasThemes.</p>
-        </div>
-        <div class="col text-white">
           <p>Already have an Account?</p>
         </div>
-        <div class="col">
+        <div class="col offset-2">
           <button class="btn" style="background-color: #f4181c; color: white;">Become a Member</button>
         </div>
       </div>
     </div>
+    
   </footer>
 
 </body>
