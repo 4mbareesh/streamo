@@ -1,7 +1,7 @@
 # Streamo
 ## Online Streaming platform
 
-> yo the website is live [Checkout📌](https://www.4mbareesh.github.io/streamo)
+> yo the website is live [Checkout📌](4mbareesh.github.io/streamo)
 ---
 ### Some Snaps are provided below
 
