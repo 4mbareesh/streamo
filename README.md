@@ -5,4 +5,4 @@
 ---
 ### Some Snaps are provided below
 
-![Screenshot 1](https://i.ibb.co/txqgkXb/Screenshot-2023-10-12-184607.png)
+![Screenshot 1](https://i.ibb.co/txqgkXb/Screenshot-2023-10-12-18460dfsf7.png)
